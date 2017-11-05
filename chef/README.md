@@ -21,6 +21,7 @@ _Knife commands:_
 * `knife node run_list add ${NODE} 'recipe[apache]'`
 * `knife cookbook upload {name}` 
 * `knife search node 'platform_*:rhel'`
+* `knife ssh "role:web" "sudo chef-client" -x {user} -P {pass}` 
 
 
 

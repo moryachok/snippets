@@ -8,5 +8,5 @@ Each Folder called by name of tool described in it.
 #Current snippets
 
 Vagrantfile - example with 2 OS's (ubuntu & centos) \
-chef/ - commands, recipe examples\
-bash/ - provision scripts for centos and ubuntu
+chef/ - commands, recipe examples\t
+bash/ - provision scripts for cenos and ubuntu
