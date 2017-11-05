@@ -8,6 +8,7 @@ Vagrant.configure(2) do |config|
       ubuntu.vm.network "private_network", ip: "192.168.33.10"
   end
 
+# centos based box has problem with syncing files in a real time
   config.vm.define "centos" do |centos|
       centos.vm.box = "centos/7"
       centos.vm.hostname = "centos"
