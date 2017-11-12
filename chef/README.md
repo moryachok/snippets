@@ -14,6 +14,12 @@ _Bootstrap a node from the workstation_
 
 `knife bootstrap {node ip} -N {node name} -x {user} --sudo`
 
+_Kitchen commands:_
+* `chef exec gem install kitchen-docker`
+* `kitchen converge`
+* `kitchen list`
+* `kitchen verify` // run a test
+
 _Knife commands:_
 
 * `knife node list` 
