@@ -6,5 +6,12 @@ wget https://packages.chef.io/files/stable/chefdk/2.3.4/ubuntu/14.04/chefdk_2.3.
 # unpack % install the downloaded file
 dpkg -i chefdk_*.deb && rm chefdk_*.deb
 
-chef verify
+chef -v
+
+
+#configuring ruby binary for chef
+echo 'eval "$(chef shell-init bash)"' >> ~/.bash_profile
+source ~/.bash_profile
+which chef  #/opt/chefdk/bin/chef
+which ruby #/opt/chefdk/embedded/bin/ruby
 

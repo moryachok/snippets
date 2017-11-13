@@ -13,3 +13,8 @@ if [ "" == "$DOCKER_INSTALLED" ]; then
     apt-cache policy docker-ce
     apt-get install -y docker-ce
 fi
+
+service start docker # to start docker service
+service enable docker # to enable docker service on boot
+
+sudo usermod -aG docker $USER # allow user to interruct with docker without sudo

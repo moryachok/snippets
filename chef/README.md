@@ -1,8 +1,17 @@
 #Workstation Commands
 
-_Generating cookbook_
+_Configuring chef ruby binary on workstation_
+`echo 'eval "$(chef shell-init bash)"' >> ~/.bash_profile` \
+`source ~/.bash_profile`
+`which chef`  /opt/chefdk/bin/chef
+`which ruby` /opt/chefdk/embedded/bin/ruby
+
+
+_Chef Generate commands_
 
 `chef generate cookbook {path to cookbook}` 
+`chef generate cookbook {path to cookbook} -g {path to generator}` 
+`chef generate generator {path to generator}`
 
 
 _Run Chef dk in a local mode_
