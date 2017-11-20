@@ -77,3 +77,4 @@ Chef-client configuration file: \
 
 file - manage/create files on the node
 cookbook_file - copy a file from a cookbook files/ dir to the node
+remote_file - transfer a file to the node from remote location
