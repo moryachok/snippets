@@ -9,8 +9,8 @@ _Configuring chef ruby binary on workstation_
 
 _Chef Generate commands_
 
-`chef generate cookbook {path to cookbook}` 
-`chef generate cookbook {path to cookbook} -g {path to generator}` 
+`chef generate cookbook {path to cookbook}`
+`chef generate cookbook {path to cookbook} -g {path to generator}`
 `chef generate generator {path to generator}`
 
 
@@ -31,10 +31,10 @@ _Kitchen commands:_
 
 _Knife commands:_
 
-* `knife node list` 
+* `knife node list`
 * `knife node show ${NODE}`
 * `knife node run_list add ${NODE} 'recipe[apache]'`
-* `knife cookbook upload {name}` 
+* `knife cookbook upload {name}`
 * `knife search node 'platform_*:rhel'`
 * `knife ssh "role:web" "sudo chef-client" -x {user} -P {pass}`
 * `knife role create {name}`
@@ -61,7 +61,7 @@ _Check configuration on the node_
 
 `ohai` - shows info about a node in JSON:
 
-* `ohai` 
+* `ohai`
 * `ohai ipaddress`
 * `ohai | grep cpu`
 
@@ -72,3 +72,8 @@ Chef-client configuration file: \
 `vi /etc/chef/client.rb`
 
 
+
+# Chef resources
+
+file - manage/create files on the node
+cookbook_file - copy a file from a cookbook files/ dir to the node
