@@ -1,0 +1,3 @@
+[submodule "git-to-rule-themall"]
+	path = git-to-rule-themall
+	url = https://github.com/moryachok/scripts-to-rule-them-all.git
