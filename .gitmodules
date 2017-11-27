@@ -1,3 +1,6 @@
 [submodule "git-to-rule-themall"]
 	path = git-to-rule-themall
 	url = https://github.com/moryachok/scripts-to-rule-them-all.git
+[submodule "aws-codedeploy-samples"]
+	path = aws-codedeploy-samples
+	url = https://github.com/moryachok/aws-codedeploy-samples.git

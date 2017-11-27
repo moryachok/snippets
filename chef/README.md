@@ -7,6 +7,22 @@ _Configuring chef ruby binary on workstation_
 `which ruby` /opt/chefdk/embedded/bin/ruby
 
 
+# CHEF-SOLO configuration
+
+* install chefdk
+* create solo.rb file under your working dir
+* set cookbook_path
+
+      cookbook_path '/vagrant/chef/cookbooks'
+      json_attribs '/vagrant/chef/solo.json'
+
+
+
+# Kitchen usage
+* install chefdk
+* install kitchen-docker
+* run `kitchen list`
+
 _Chef Generate commands_
 
 `chef generate cookbook {path to cookbook}`
@@ -75,6 +91,13 @@ Chef-client configuration file: \
 
 # Chef resources
 
-file - manage/create files on the node
-cookbook_file - copy a file from a cookbook files/ dir to the node
-remote_file - transfer a file to the node from remote location
+* file - manage/create files on the node
+* cookbook_file - copy a file from a cookbook files/ dir to the node
+* remote_file - transfer a file to the node from remote location
+
+
+# Running Tests
+
+* `chef exec rspec` - running unit tests from the cookbooks/{cookbook name} root folder
+* `chef exec rspec {path to specific test file}` - you can also run any specific unit test
+* `chef exec rspec --color -fd` - enhancing the output readabilitys

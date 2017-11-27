@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/vagrant/chef/cookbooks/main/.kitchen/docker_id_rsa"
+image_id: 5195edf9233b
+container_id: 064a4b95b0d013a227caa99c34721932e15a86a55224be1516de9ef7b223c528
+hostname: localhost
+port: 32773
+last_action: verify
+last_error: 

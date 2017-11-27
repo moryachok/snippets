@@ -1,0 +1,3 @@
+I, [2017-11-21T12:57:10.535232 #7243]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2017-11-21T12:57:10.646377 #7243]  INFO -- default-ubuntu-1404: Loaded tests from test/smoke/default 
+I, [2017-11-21T12:57:10.684020 #7243]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.14s).

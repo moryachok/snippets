@@ -14,7 +14,7 @@ if [ "" == "$DOCKER_INSTALLED" ]; then
     apt-get install -y docker-ce
 fi
 
-service start docker # to start docker service
-service enable docker # to enable docker service on boot
+service docker start  # to start docker service
+service docker enable  # to enable docker service on boot
 
 sudo usermod -aG docker $USER # allow user to interruct with docker without sudo
