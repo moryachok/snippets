@@ -12,12 +12,13 @@ aws iam add-role-to-instance-profile --instance-profile-name {profilename} --rol
 ######### EC2 #########
 
 aws ec2 describe-instances --query "Reservations[].Instances[].[State.Name, InstanceId]"
+aws ec2 describe-instances --query "Reservations[].Instances[].[NetworkInterfaces[0].Association.PublicIp]"
 
 
 ######### CODEDEPLOY #########
 
 aws deploy push --application-name DemoApp --ignore-hidden-files\
-      --s3-location s3://misha-cloudinary-codedeploy/Project1.zip \
+      --s3-location s3://misha-cloudinary-codedeploy/Project3.zip \
       --source .
 
 aws deploy register-application-revision --application-name DemoApp --s3-location bundleType=zip,eTag=a199ae2c04ce7f8aba87c23351ad5500,bucket=misha-cloudinary-codedeploy,key=revision_20171123_11_49_10.zip
