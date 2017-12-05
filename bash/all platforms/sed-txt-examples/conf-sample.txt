@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+Bla bla bla
+some anothe script with bash
+/bin/bash
+
+
