@@ -4,3 +4,6 @@
 [submodule "aws-codedeploy-samples"]
 	path = aws-codedeploy-samples
 	url = https://github.com/moryachok/aws-codedeploy-samples.git
+[submodule "mac-automation"]
+	path = mac-automation
+	url = https://github.com/moryachok/laptop.git
