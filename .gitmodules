@@ -7,3 +7,6 @@
 [submodule "mac-automation"]
 	path = mac-automation
 	url = https://github.com/moryachok/laptop.git
+[submodule "chefspec"]
+	path = chefspec
+	url = https://github.com/moryachok/chefspec.git
