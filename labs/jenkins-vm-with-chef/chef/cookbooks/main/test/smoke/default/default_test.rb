@@ -1,18 +1,14 @@
-# # encoding: utf-8
+require 'chefspec'
 
-# Inspec test for recipe main::default
+describe 'package::install' do
+  let(:chef_run) { ChefSpec::ServerRunner.new(platform: 'ubuntu', version: '16.04').converge(described_recipe) }
 
-# The Inspec reference, with examples and extensive documentation, can be
-# found at http://inspec.io/docs/reference/resources/
-
-unless os.windows?
-  # This is an example test, replace with your own test.
-  describe user('root'), :skip do
-    it { should exist }
+  it 'installs a package nmap' do
+    expect(chef_run).to install_package('nmap')
   end
-end
 
-# This is an example test, replace it with your own test.
-describe port(80), :skip do
-  it { should_not be_listening }
+  it 'installs a package default-jdk' do
+    expect(chef_run).to install_package('default-jdk')
+  end
+
 end
