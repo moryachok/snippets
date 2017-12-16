@@ -1,8 +1,8 @@
 #
 # Cookbook:: main
 # Recipe:: default
-#
-# Copyright:: 2017, The Authors, All Rights Reserved.
+# Based on this tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
+# Copyright:: 2017, Misha Greenshtein, All Rights Reserved.
 
 log 'message' do
   message 'Hello Misha, the Creator of this amazing recipe!'
