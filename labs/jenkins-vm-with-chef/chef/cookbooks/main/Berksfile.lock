@@ -1,7 +1,0 @@
-DEPENDENCIES
-  main
-    path: .
-    metadata: true
-
-GRAPH
-  main (0.1.0)

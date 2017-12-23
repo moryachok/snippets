@@ -1,0 +1,16 @@
+The SSN Generator is designed to 
+developers in need of randomly 
+generated data for testing cases. 
+The SSN validation 
+validates the numbers 
+pattern for a given 
+state area code. 
+Therefore, if a SSN 
+passes this tool validation, it doesn't mean that it really exists, 
+only that it's code, for the given pattern, is possible. 
+This is the same validation that guarantees the basic authentication, 
+of generated ssn's, for forms under development, 
+Bitcoin is 20K $ USA
+as they merely checks for a possible pattern. 
+Generated SSN's aren't real, and shouldn't be 
+used on attempt of any illegal activity.

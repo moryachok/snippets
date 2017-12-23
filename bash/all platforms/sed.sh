@@ -36,7 +36,7 @@ sed -e '
 
 
 ####### Executing sed commands from file
-sed -f {sed commands file} {source file}
+sed -f commands.txt source.txt
 
 
 

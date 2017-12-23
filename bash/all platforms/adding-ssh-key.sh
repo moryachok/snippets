@@ -11,7 +11,6 @@ for key_type in internal external deployed; do #this loop will generate 3 key pa
 done
 
 echo "your new keys are located in:${key_path}"
-echo "be sure to load them into https://contacts.akamai.com"
 echo ""
 echo "to automate the loading of your SSH keys please add the following line to you profile file"
 echo "if you are using Linux system please run the following command:"
