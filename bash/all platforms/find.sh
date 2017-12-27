@@ -25,5 +25,5 @@ find . -size 0c               # find files of 0 bytes in current dir
 ##########################################
 
 find /home -perm 777 -exec chmod 555 {} \; # change permission to 555 for every file with 777 in /home dir
-
+find . ! -path . -exec rm -r {} \; # remove evetything in current dir except  "." dir
 
