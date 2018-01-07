@@ -32,6 +32,9 @@ grep -f patterns.txt file.txt
 # look for pattern in files (-l) recurcively (-r)
 grep -lr cron  /etc
 
+# output file contents without commented lines and empty lines
+grep -Eiv '(^#|^$)' /some.conf > /edited.conf
+
 
 ############################################
 #### EGREP & FGREP #########################
@@ -48,3 +51,6 @@ egrep -v 'pattern|possible' file.txt
 
 # look for $ sign
 fgrep $ file.txt 
+
+# looks through the currently running processes and lists the process IDs for specific user
+pgrep -U user 
