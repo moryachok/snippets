@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello<%=User.find(3).name%></title>
+</head>
+<body>
+  <ul id="link_to example">
+    <li>Creates a link <%= link_to user.name, user_path(user)%></li>
+    <li>Shorter link <%= link_to user.name, user %></li>
+    <li>Scheme <%= link_to "text to show", model_instance %></li>
+    <li><% link_to "Edit", edit_user_path(user) %></li>
+    <li><% link_to "Destroy", user, method: :delete %></li>
+  </ul>
+  
+  <ul id="loop example">
+    <% User.all.each do |user| %>
+    <li><%= user.name %></li>
+    <% end %>
+  </ul>
+  
+  <div id="if example">
+    <% if User.all.size == 0 %>
+    <p>No users available</p>
+    <% end %>
+  </div>
+  
+  <div id="using UsersController">
+    <p>Hello <%= @user.name %></p>
+  </div>
+  
+  <!-- Custom routes described in routes.rb -->
+  <div id="custom route:  list all users link_to()">
+    <%= link_to "list users",  list_all_users_path %> 
+  </div>
+  
+</body>
+</html>
