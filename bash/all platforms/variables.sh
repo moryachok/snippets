@@ -14,3 +14,5 @@ $LINENO - Returns the current line number in the Bash script.
 
 # This technique allows for a variable to be assigned a value if another variable is either empty or is undefined. NOTE: This "other variable" can be the same or another variable.
 LOGFILE="${LOGFILE:-./file.log}"
+
+ARRAY=("one" "two" "three")

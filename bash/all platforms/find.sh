@@ -54,6 +54,7 @@ find . -mindepth 1 -type d -not -name ".*" | xargs rm -d  # remove all directori
 
 find /tmp -type f -name "*.log" | xargs tar -cvf /tmp/`date '+%d%m%Y'_archive.tar.gz` --absolute-names
 
+find "${CWD}/$FOLDER" -name "*" -mindepth 1 -maxdepth 1 | rev |cut -d'/' -f1,2 | rev | tee -a ./fonts/cld_fonts.txt
 
 ##########################################
 ####  USEFUL URLS ########################
