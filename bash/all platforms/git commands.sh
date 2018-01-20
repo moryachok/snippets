@@ -11,4 +11,5 @@ git submodule add {repo url} {folder to create}
 
 git submodule update # update current directory to remote version of the submodule, used as revert
 
-
+# setting remove url as ssh
+git remote set-url origin git@github.com:moryachok/snippets.git
