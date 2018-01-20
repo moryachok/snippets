@@ -1,16 +1,15 @@
 class UsersController < ApplicationController
-  # Methods are corresponding to the views names
-  # show() handles views/show.html.erb
-  # @ will configure scope, in that way view will "see" user variable
-  def show 
-    @user = User.find(1)
-  end
   
-  # will render /views/status.html.erb 
-  def show
-    @user = User.find(1)
-    render action: 'status' 
-  end 
+  # /users/4
+  # /users/4.json
+  def show 
+    @user = User.find(params[:id])
+    respond_to do |format|
+      format.html # will render show.html.erb
+      format.json {render json: @user}
+      format.xml {render xml: @user}
+    end   
+  end
   
   #########################################
   ###### USING PARAMS #####################
@@ -35,17 +34,30 @@ class UsersController < ApplicationController
   end
   
   #########################################
-  #### USING FORMATS: html,json,xml #######
+  #### CUSTOMIZED JSON RESPONSE ###########
   #########################################
   
-  def show 
+  def get_name
     @user = User.find(params[:id])
-    respond_to do |format|
-      format.html # will render show.html.erb
-      format.json {render json: @user}
-      format.xml {render xml: @user}
-    end   
+    render json: @user.to_json(only: :name)
   end
+  
+  def get_name_and_age
+    @user = User.find(params[:id])
+    render json: @user.to_json(only: [:name, :age])
+  end
+  
+  def get_all_except_age
+    @user = User.find(params[:id])
+    render json: @user.to_json(except: :age)
+  end
+  
+  def include_friends
+    @user = User.find(params[:id])
+    render json: @user.to_json(include: :friend, except: :age)
+  end
+  
+  
   
   #########################################
   #### REDIRECTS AND FLASH ################
