@@ -1,3 +1,14 @@
+-eq # equal
+-ne # not equal
+-lt # less than
+-le # less than or equal
+-gt # greater than
+-ge # greater than or equal
+
+if [ "$a" -gt "$b" ]; then
+    ...
+fi
+
 
 STR="cloudinary-misha/node-tests-lab,cloudinary-misha/node-tests-lab2"
 IFS=','
@@ -24,3 +35,5 @@ fi
 ########## SHORTHAND CONDITIONAL ########
 
 [ -z "$VAR1" ] && "echo exist" || echo "exist"
+
+

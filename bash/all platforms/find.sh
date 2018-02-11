@@ -46,7 +46,8 @@ find /tmp -perm 777 -exec chmod 555 {} \;                 # change permission to
 find . -mindepth 1 -type f  -exec ls {} \; 
 find . -mindepth 1 -type f  -exec rm {} \;                # remove all the files in current dir except  "." dir
 
-
+# rename files, not finished
+find . -mindepth 1 -maxdepth 1 -type f -name "*.webloc" -exec sh -c 'x="{}"; echo "$x" | sed "s/.webloc//"' \;
 
 #Not a best practise from the speed  term
 find . -mindepth 1 -type d -not -name ".*" | xargs ls
