@@ -1,0 +1,1 @@
+status:[400 TO 499] AND (extension:php OR extension:html)
