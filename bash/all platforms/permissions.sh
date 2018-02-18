@@ -106,6 +106,8 @@ mkdir myDir # permission 775
 # set different defaults
 umask 004
 
+# set umask for user by:
+# umask xxx ~/.profile
 
 ##########################################
 ##### SPECIAL PERMISSIONS ################

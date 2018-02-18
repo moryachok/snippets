@@ -18,11 +18,27 @@ git submodule update --remote
 # setting remove url as ssh
 git remote set-url origin git@github.com:moryachok/snippets.git
 
+# different ssh user: bitbucket-private
+git remote set-url origin git@bitbucket-private:whatever.git
+
+######################################################################
+###### RESETING AND CLEANING #########################################
+######################################################################
+
 #reset current branch back to 3 commmits
 git reset --hard HEAD~3
 
 #reset current branch back to specific commit
 git reset --hard <commit id>
+
+# show untracked files that will be removed
+git clean -n
+
+# delete untracked files
+git clean -f
+
+# delete untracked files and directories
+git clean -fd
 
 # check ssh connection
 ssh -T git@bitbucket.org

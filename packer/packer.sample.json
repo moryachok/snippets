@@ -1,0 +1,26 @@
+{
+    "variables": {
+        "region":  "eu-central-1"
+    },
+    "builders": [
+        {
+            "profile": "some-profile",
+            "ami_name": "packer-ami-{{timestamp}}",
+            "instance_type": "t2.micro",
+            "region": "eu-central-1",
+            "source_ami": "ami-df8406b0",
+            "ssh_username": "ubuntu",
+            "type": "amazon-ebs"
+        }
+    ],
+    "provisioners": [
+        {
+          "type": "chef-solo",
+          "cookbook_paths": ["chef/cookbooks"],
+          "environments_path": "chef/environments",
+          "roles_path": "chef/roles",
+          "chef_environment": "production",
+          "run_list": ["role[base]"]
+        }
+    ]
+}
