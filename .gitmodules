@@ -10,3 +10,6 @@
 [submodule "chefspec"]
 	path = chefspec
 	url = https://github.com/moryachok/chefspec.git
+[submodule "pipeline-examples"]
+	path = pipeline-examples
+	url = git@github.com:moryachok/pipeline-examples.git
