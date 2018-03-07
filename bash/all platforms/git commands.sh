@@ -43,3 +43,25 @@ git clean -fd
 # check ssh connection
 ssh -T git@bitbucket.org
 ssh -T git@github.com
+
+# get changelog between local master and remote
+git --no-pager shortlog --no-merges master..origin/master
+
+
+
+######################################################################
+###### TAGS ##########################################################
+######################################################################
+
+git tag "name" # create tag from current branch
+
+git push origin HEAD --tags # push with tags
+
+git fetch --tags
+
+git checkout "tags/name"
+
+
+
+
+

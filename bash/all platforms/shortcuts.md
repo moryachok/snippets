@@ -1,8 +1,11 @@
+Inspired by https://www.blockloop.io/mastering-bash-and-terminal/
+
+
 # begining of a line
 ctrl-a  
 
 # end of a line
-ctrl-a 
+ctrl-e
 
 # clear screen except of current command
 ctrl-l 
@@ -20,7 +23,14 @@ ctrl-w
 ctrl-d    
 
 # switch 2 characters    claer >> clear
-ctrl-t             
+ctrl-t  
 
+# back search in commands history
+ctrl-r          
 
+# forward search in commands history
+ctrl-s  
 
+# saving current dir and move on
+pushd ~/tmp/ # mark your current directory and cd to ~/tmp/
+popd # this takes you back to ~/go/

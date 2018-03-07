@@ -10,7 +10,7 @@ if [ "$a" -gt "$b" ]; then
 fi
 
 
-STR="cloudinary-misha/node-tests-lab,cloudinary-misha/node-tests-lab2"
+STR="repo1,repo2"
 IFS=','
 for repo in $STR; do
   echo $repo

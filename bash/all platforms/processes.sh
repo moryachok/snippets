@@ -11,6 +11,8 @@ ps a #show all processes
 
 ps au #all processes for all users
 
+ps -ef 
+
 ps aux # all processes include boot processes, for mac use: ps -ef
 
 ps -lu user # show process priorities for current user
